@@ -94,14 +94,23 @@ p, li, a {
 }
 
 .content {
-    display: flex;
-    flex-wrap: wrap;
     padding: 50px;
     padding-bottom: 0;
+    box-shadow: var(--washedBlack) 0px 20px 20px 20px;
 }
 
 .content:nth-of-type(even) {
     background-color: var(--washedBlack);
+}
+
+.portImgWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.portImgContainer {
+    columns: 28dvw;
 }
 
 .block {
@@ -135,10 +144,14 @@ p, li, a {
     color: orangered;
 }
 
+.portTitle {
+    font-size: clamp(2rem, 4.3908rem + 5.3495vw, 16.75rem);
+}
+
 .portImg {
-    display: inline;
-    max-width: 20dvw;
-    margin: auto;
+    max-width: 30dvw;
+    height: auto;
+    margin-bottom: 10px;
 }
 
 footer {
@@ -151,4 +164,32 @@ footer {
 .wjLogo {
     max-width: 200px;
     margin-left: auto;
+}
+
+@media only screen and (max-width: 1200px) { 
+
+    .contentHero {
+        display: grid;
+        grid-template-areas: 1 / 1;
+    }
+
+    .profilePicture {
+        filter: grayscale(1) brightness(.4);
+        transition: all .3s ease;
+    }
+
+    .profilePicture:hover {
+        filter: grayscale(0);
+    }
+
+    #whatIdo {
+        grid-area: 1 / 1;
+        z-index: 999;
+    }
+    
+    #whereIdoit {
+        grid-area: 1 / 1;
+        z-index: 999;
+    }
+
 }
