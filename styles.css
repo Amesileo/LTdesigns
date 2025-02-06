@@ -18,6 +18,10 @@
     margin: 0;
 }
 
+html {
+scroll-behaviour: smooth;
+}
+
 body {
     background-color: #3f3f3f;
 }
