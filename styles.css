@@ -100,11 +100,14 @@ p, li, a {
 .content {
     padding: 50px;
     padding-bottom: 0;
-    box-shadow: var(--washedBlack) 0px 20px 20px 20px;
 }
 
 .content:nth-of-type(even) {
     background-color: var(--washedBlack);
+}
+
+.content p {
+    padding-bottom: 20px;
 }
 
 .portImgWrapper {
@@ -117,8 +120,13 @@ p, li, a {
     columns: 28dvw;
 }
 
-.block {
-    display: block;
+.portImgContainerLoft {
+    column-fill: balance;
+}
+
+.portImgLoft {
+    max-height: 50dvh;
+    max-width: 100dvw;;
 }
 
 .profilePicture {
@@ -161,6 +169,7 @@ p, li, a {
 footer {
     display: flex;
     align-items: center;
+    text-align: center;
     padding: 30px;
     background-color: var(--washedBlack);
 }
