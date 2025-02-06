@@ -87,10 +87,25 @@ p, li, a {
     color: orangered
 }
 
-.content {
+.contentHero {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 2;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px;
+    padding-bottom: 0;
+}
+
+.content:nth-of-type(even) {
+    background-color: var(--washedBlack);
+}
+
+.block {
+    display: block;
 }
 
 .profilePicture {
@@ -118,4 +133,22 @@ p, li, a {
     grid-area: 2 / 2;
     font-size: clamp(1rem, 2.3908rem + 4.3495vw, 16.75rem);
     color: orangered;
+}
+
+.portImg {
+    display: inline;
+    max-width: 20dvw;
+    margin: auto;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    background-color: var(--washedBlack);
+}
+
+.wjLogo {
+    max-width: 200px;
+    margin-left: auto;
 }
