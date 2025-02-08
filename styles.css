@@ -272,7 +272,7 @@ footer {
     border-top: orangered 5px solid;
 }
 
-a > .wjLogo {
+a:has(.wjLogo) {
     margin-left: auto;
 }
 
@@ -288,7 +288,7 @@ a > .wjLogo {
         text-align: center;
     }
 
-    a > .wjLogo {
+    a:has(.wjLogo) {
         margin: auto;
         margin-top: 30px;
     }
