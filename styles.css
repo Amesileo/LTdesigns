@@ -272,9 +272,12 @@ footer {
     border-top: orangered 5px solid;
 }
 
+a > .wjLogo {
+    margin-left: auto;
+}
+
 .wjLogo {
     max-width: 200px;
-    margin-left: auto;
 }
 
 @media only screen and (max-width: 500px) {
@@ -285,10 +288,13 @@ footer {
         text-align: center;
     }
 
-    .wjLogo {
-        max-width: 200px;
+    a > .wjLogo {
         margin: auto;
         margin-top: 30px;
+    }
+
+    .wjLogo {
+        max-width: 200px;
     }
 }
 
@@ -318,4 +324,3 @@ footer {
         }
     }
 }
-
